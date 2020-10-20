@@ -39,7 +39,12 @@ npm install mariadb
 
 // run the server in development mode
 npm run dev
+
+// run the server in development mode to turn on node debugger
+npm run dev:inspect
 ```
+
+Note: if using vscode you can hit F5 on a file and it will run the program and launch the debugger for you.
 
 
 This project follows the 3 Layer Architecture:
