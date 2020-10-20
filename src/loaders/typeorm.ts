@@ -11,12 +11,10 @@ enum DatabaseType {
   Postgres = "postgres"
 }
 
-let configDatabaseType = <DatabaseType> config.db.type
-
 export default async () => {
   return await createConnection({
       name: 'default',
-      type: configDatabaseType,
+      type: <DatabaseType> config.db.type,
       host: config.db.host,
       port: config.db.port,
       username: config.db.username,
