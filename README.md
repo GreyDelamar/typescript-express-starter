@@ -9,7 +9,7 @@ src
     └───middleware          # Controller level middleware
     └───controller          # Controller decides where the request goes
     └───models              # Database models is queries using the enitity
-      └───entities          # Database enitity is a class that maps to a database table
+      └───entities          # Database entity is a class that maps to a database table
     └───services            # All the business logic is here
   └───config                # Environment variables and configuration related stuff
   └───db                    # Store Migrations/Seed
@@ -25,10 +25,26 @@ Future Ideas
 └───subscribers       # Event handlers for tasks *optional*
 ```
 
+Project Installation
+```bash
+cp .env.example .env
+
+npm install
+
+// install a database driver ( choose one )
+npm install mysql
+npm install mssql
+npm install pg
+npm install mariadb
+
+// run the server in development mode
+npm run dev
+```
+
 
 This project follows the 3 Layer Architecture:
   - The idea is to use the principle of separation of concerns to make a more modular application.
-  - This allows you to scale/replace one of these seperate pieces without impacting the rest.
+  - This allows you to scale/replace one of these separate pieces without impacting the rest.
 
 ```
     -------------------------------

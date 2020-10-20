@@ -33,6 +33,7 @@ export default {
 
   db: {
     host: process.env.DB_HOST,
+    type: String(process.env.DB_TYPE),
     port: Number(process.env.DB_PORT),
     username: process.env.DB_USERNAME,
     password: process.env.DB_PASSWORD,
